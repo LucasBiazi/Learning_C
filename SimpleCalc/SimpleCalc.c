@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 void main(){
+	printf("Welcome!");
 	int c = 1;
 	float n1, n2;
 	float calculus (float n1, float n2, int c){
