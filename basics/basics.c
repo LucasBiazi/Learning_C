@@ -39,6 +39,21 @@ int main(){
 	printf("Odd numbers between 1 and 10: %i\n",i);
 	}
 
-	//Pointers
-	printf("I's pointer: %p\n", &i);
+	//Pointers are like a variables' id
+	int x = 10;
+	int *x_pointer = &x;
+	printf("X's value: %i, X's pointer: %p X's value from the pointer %i\n", x, x_pointer, *x_pointer);
+
+	//Functions
+	int *return_x_pointer (){
+		return &x;
+	}
+	printf("X's pointer: %p\n", return_x_pointer());
+
+	char your_name(char x[]){
+		printf("Your name is %s.\n", x);	
+	}
+	your_name("Lucas");
+	
+	return 0;
 }
